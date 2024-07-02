@@ -21,8 +21,6 @@ int firstUniqChar(string s) {
 
 
 int main() {
-    // string str = "leetcode";
-    // string str = "leetcode";
     string str = "loveleetcode";
 
     cout << firstUniqChar(str);
