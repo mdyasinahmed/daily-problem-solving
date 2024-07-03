@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-bool isPalindrome(long long n) {
+long long getPalindrome(long long n) {
     long long value = n, store=0;
 
         while(n != 0) {
@@ -9,18 +9,18 @@ bool isPalindrome(long long n) {
             n/=10;
         }
 
-        if(value != store) return false;
-
-    return true;
+    return store;
 }
 
 int main() {
     long long n;
     cin >> n;
 
-    if(isPalindrome(n)){
+    if(getPalindrome(n) == n){
+        cout << getPalindrome(n) << endl;
         cout << "YES" << endl;
     } else {
+        cout << getPalindrome(n) << endl;
         cout << "NO" << endl;
     }
 
