@@ -1,0 +1,157 @@
+// {
+//     // See https://go.microsoft.com/fwlink/?LinkId=733558
+//     // for the documentation about the tasks.json format
+//     // "version": "2.0.0",
+//     // "tasks": [
+//     //     {
+//     //         "label": "echo",
+//     //         "type": "shell",
+//     //         "command": "echo Hello"
+//     //     }
+//     // ]
+
+// }
+
+{
+"version": "2.0.0",
+"tasks": [
+    {
+    "label": "Run Python Script",
+    "type": "shell",
+    "command": "cls && python ${file}",
+    "windows": {
+        "command": "cls && python ${file}"
+    },
+    "linux": {
+        "command": "clear && python3 ${file}"
+    },
+    "osx": {
+        "command": "clear && python3 ${file}"
+    },
+    "problemMatcher": [],
+    "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": true
+    }
+    },
+    {
+    "label": "Run JavaScript",
+    "type": "shell",
+    "command": "cls && node ${file}",
+    "windows": {
+        "command": "cls && node ${file}"
+    },
+    "linux": {
+        "command": "clear && node ${file}"
+    },
+    "osx": {
+        "command": "clear && node ${file}"
+    },
+    "problemMatcher": [],
+    "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": true
+    }
+    },
+    {
+    "label": "Run C Program",
+    "type": "shell",
+    "command": "cls && gcc ${file} -o ${fileDirname}/${fileBasenameNoExtension} && ${fileDirname}/${fileBasenameNoExtension}",
+    "windows": {
+        "command": "cls && gcc ${file} -o ${fileDirname}\\${fileBasenameNoExtension} && ${fileDirname}\\${fileBasenameNoExtension}"
+    },
+    "linux": {
+        "command": "clear && gcc ${file} -o ${fileDirname}/${fileBasenameNoExtension} && ${fileDirname}/${fileBasenameNoExtension}"
+    },
+    "osx": {
+        "command": "clear && gcc ${file} -o ${fileDirname}/${fileBasenameNoExtension} && ${fileDirname}/${fileBasenameNoExtension}"
+    },
+    "problemMatcher": [],
+    "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": true
+    }
+    },
+    {
+    "label": "Run C++ Program",
+    "type": "shell",
+    "command": "cls && g++ ${file} -o ${fileDirname}/${fileBasenameNoExtension} && ${fileDirname}/${fileBasenameNoExtension}",
+    "windows": {
+        "command": "cls && g++ ${file} -o ${fileDirname}\\${fileBasenameNoExtension} && ${fileDirname}\\${fileBasenameNoExtension}"
+    },
+    "linux": {
+        "command": "clear && g++ ${file} -o ${fileDirname}/${fileBasenameNoExtension} && ${fileDirname}/${fileBasenameNoExtension}"
+    },
+    "osx": {
+        "command": "clear && g++ ${file} -o ${fileDirname}/${fileBasenameNoExtension} && ${fileDirname}/${fileBasenameNoExtension}"
+    },
+    "problemMatcher": [],
+    "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": true
+    }
+    },
+    {
+    "label": "Run Java Program",
+    "type": "shell",
+    "command": "cls && javac ${file} && java ${fileDirname}/${fileBasenameNoExtension}",
+    "windows": {
+        "command": "cls && javac ${file} && java ${fileDirname}\\${fileBasenameNoExtension}"
+    },
+    "linux": {
+        "command": "clear && javac ${file} && java ${fileDirname}/${fileBasenameNoExtension}"
+    },
+    "osx": {
+        "command": "clear && javac ${file} && java ${fileDirname}/${fileBasenameNoExtension}"
+    },
+    "problemMatcher": [],
+    "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": true
+    }
+    },
+    {
+    "label": "Run Ruby Script",
+    "type": "shell",
+    "command": "cls && ruby ${file}",
+    "windows": {
+        "command": "cls && ruby ${file}"
+    },
+    "linux": {
+        "command": "clear && ruby ${file}"
+    },
+    "osx": {
+        "command": "clear && ruby ${file}"
+    },
+    "problemMatcher": [],
+    "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": true
+    }
+    }
+]
+}
